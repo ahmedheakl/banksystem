@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banky</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="icon" href="../static/imgs/bank-colored.png">
+
+    
+</head>
+<body>
+    <div class="page-container">
+        <section class="nav-bar">
+            <div class="logo-container">
+                <img src="../static/imgs/bank-colored.png" height="50" width="50">
+                <span>BANKY</span>
+            </div>
+            <nav>
+                <ul>
+                    <li class="selected">
+                        <img src="../static/imgs/customer-service.png" height="20" width="20">
+                        <a href="index.html">Customers</a>
+                    </li>
+                    <li class="not-selected">
+                        <img src="../static/imgs/transaction.png" height="20" width="20">
+                        <a href="transactions.html">Transactions</a> 
+                    </li>
+                    <li class="not-selected">
+                        <img src="../static/imgs/money-transfer.png" height="20" width="20">
+                        <a href="newTransaction.html">Make Transaction</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <section class="main-container customer-container">
+            
+            <div>
+                <div class="table-header-container customer">
+                    <header class="table-header">
+                        <h3>Customers Data Table</h3>
+                        <span>Press any entry to access its data</span>
+                    </header>
+                </div>
+                <div class="customers-table-container">
+                    <table class="customers-table" id="customers-table">
+                        <thead class="main-thead">
+                            <th>ID</th>
+                            <th>From</th>
+                            <th>To</th>
+                            <th>Time</th>
+                            <th>Amount</th>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+            <div class="customer-detail">
+                <header class="customer-header">
+                    <h3>Ahmed Heakl</h3>
+                </header>
+            </div>
+        </section>
+    </div>
+    <script src="../static/js/CustomersScript.js"></script>
+</body>
+</html>
+
+

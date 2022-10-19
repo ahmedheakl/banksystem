@@ -1,0 +1,232 @@
+:root{
+    --red-color: #f44336;
+    --dark-red-color: #f33527;
+    --light-offwhite-color: rgba(0,0,0,.04);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    transition: all 0.2s;
+    
+}
+
+body{
+    background-color: whitesmoke;
+}
+.page-container{
+    display: flex;
+}
+.nav-bar{
+    background-color: white;
+    height: 100vh;
+    flex-grow: 0.15;
+    margin-right: 20px;
+    box-shadow: -4px 7px 20px 0px black;
+    padding: 3rem;
+}
+
+
+.nav-bar .logo-container{
+    width: 100%;
+    padding-bottom: 10px;  
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px red solid;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.nav-bar .logo-container span{
+    color: red;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    flex-grow: 0.6;
+}
+
+.nav-bar ul{
+    list-style-type: none;
+}
+
+.nav-bar ul li{
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    min-width: 150px;
+    justify-content: space-between;
+
+}
+
+
+.nav-bar ul li a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+    flex-grow: 0.8;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.not-selected:hover{
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+.selected{
+    background-color: var(--red-color);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px 0px #cabbbb;
+}
+
+.selected:hover{
+    background-color: var(--red-color);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px 0px #cabbbb;
+}
+
+.main-container{
+    flex-grow: 0.85;
+}
+
+.customer-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.customer-detail{
+    min-width: 250px;
+    margin: 170px auto;
+    background-color: red;
+    min-height: 200px;
+    height: 200px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 2px black solid;
+}
+
+/*------------Customers Page----------*/
+.customers-table-container{
+    background-color: white;
+    margin: 100px 20px;
+    padding: 20px 20px;
+    box-shadow: 2px 2px 2px 0px #cabbbb;
+    border-radius: 20px;
+}
+
+.customers-table th{
+    width: 200px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.customers-table .main-thead th{
+    color: #9c27b0;
+}
+
+.secondary-thead:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+
+tr,td{
+    border-top: 1px rgb(163, 163, 163) solid;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+td{
+    padding: 10px 0px;
+}
+
+.table-header-container{
+    width: 50em;
+    margin: auto;
+    background-color: var(--red-color);  
+    padding: 10px 20px;
+    border-radius: 10px;
+    position: relative;
+    top: 120px;
+}
+
+.table-header-container .table-header{
+
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.table-header-container .table-header span{
+    color: rgb(234, 231, 231);
+}
+
+#transaction-form{
+    padding: 20px;
+}
+
+#transaction-form input{
+    padding: 15px 10px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    background-color: var(--light-offwhite-color);
+    width: 20rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px rgb(171, 170, 170) solid;
+}
+
+#transaction-form input:hover, #transaction-form input:focus{
+    border-bottom: 1px black solid;
+}
+
+.form-inputs-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.form-inputs-container label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+
+.form-inputs-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.submit-button-container{
+    margin: 10px 10px;
+    display: flex;
+    justify-content: right;
+}
+
+.submit-button-container button{
+    outline: none;
+    border: none;
+    font-size: 0.8rem;
+    background-color: var(--red-color);
+    padding: 12px 30px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 2px 0 rgb(244 67 54 / 14%), 0 3px 1px -2px rgb(244 67 54 / 20%), 0 1px 5px 0 rgb(244 67 54 / 12%);
+    text-transform: uppercase;
+
+}
+
+.submit-button-container button:hover{
+    background-color: var(--dark-red-color);
+    box-shadow: 0 14px 26px -12px rgb(244 67 54 / 42%), 0 4px 23px 0px rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(244 67 54 / 20%);
+    
+}
+
+
+
+
+
+
+
